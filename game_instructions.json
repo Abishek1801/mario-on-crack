@@ -1,31 +1,54 @@
 {
+  "meta": {
+    "player_id": "user14"
+  },
   "knobs": {
     "enemy_count": 4,
-    "enemy_speed": 1.0,
-    "hint_delay_ms": 10000
+    "enemy_speed": 0.8
   },
   "content": {
-    "title": "The Crimson Pursuit",
+    "title": "The Gauntlet of the Unchained",
     "scenes": [
       {
-        "intro_text": "You've tracked the rival syndicate's enforcer, 'The Hammer', to a derelict shipyard. He spots you from across a chasm between two rusting cargo containers and starts to raise a heavy crossbow.",
+        "intro_text": "You stand before the obsidian gates of Warlord Kael's proving grounds, a monument to brutal strength. A voice like grinding stone echoes, 'Your entry must be earned in fury. Shatter my gate!'",
         "challenge": {
           "type": "QTE",
-          "prompt": "Leap across the gap before he can fire!",
-          "key": "SPACE",
-          "presses": 1,
-          "time_limit": 1.0
+          "key": "F",
+          "presses": 12,
+          "time_limit": 6
         }
       },
       {
-        "intro_text": "You land hard, rolling to your feet. The Hammer is cornered, but he smirks, gesturing to a massive, precariously balanced crane hook hanging directly over the only exit. With a single lever pull, he can bring it crashing down.",
+        "intro_text": "The gates lie in splinters behind you, leading to a vast hall where countless weapons line the walls. A disembodied voice challenges you, 'Brute force is not enough. Solve my riddle, or be trapped forever.'",
+        "challenge": {
+          "type": "RIDDLE",
+          "riddle_text": "I am born of the forge but have no heat. I have a single, unblinking eye, but cannot see. I end all arguments. What am I?",
+          "answer": "A sword",
+          "time_limit": 45,
+          "hint_text": "My 'eye' is the point where I meet my foe."
+        }
+      },
+      {
+        "intro_text": "As the riddle is solved, a hidden passage opens into a treasure chamber. Before you are two pedestals: one holds a glowing axe pulsing with chaotic energy, the other holds chains that promise to bind any foe.",
         "challenge": {
           "type": "DILEMMA",
-          "prompt": "He is within reach, but so is the crane's release lever. What is your immediate target?",
           "options": [
-            "Lunge for The Hammer to take him down now.",
-            "Dash for the lever to secure your escape route first."
+            {
+              "choice": "Seize the 'Axe of Endless Rage'.",
+              "consequence": "You feel an incredible surge of power, but a burning anger clouds your judgment, making diplomacy impossible."
+            },
+            {
+              "choice": "Take up the 'Chains of Dominion'.",
+              "consequence": "These chains can bind even the strongest foe, but their weight is a constant burden, slowing your every move."
+            }
           ]
+        }
+      },
+      {
+        "intro_text": "You emerge into a ruined colosseum, the site of the final trial. The Warlord's voice booms, 'You have proven worthy. As a final boon, find the sigil I left behind for a true conqueror.'",
+        "challenge": {
+          "type": "FIND_COLLECTIBLE",
+          "description": "Search the arena for the Warlord's Crest. It is not in the open, but hidden where the greatest champion might have fallen, amidst a pile of shattered shields and broken bones."
         }
       }
     ]
