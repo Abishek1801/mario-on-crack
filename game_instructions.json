@@ -1,53 +1,51 @@
 {
   "meta": {
-    "player_id": "user19"
+    "player_id": "user29"
   },
   "knobs": {
-    "enemy_count": 3,
-    "enemy_speed": 0.8
+    "enemy_count": 2,
+    "enemy_speed": 0.7
   },
   "content": {
-    "title": "The Sundered Keystone",
+    "title": "The Sunken Ziggurat of Aeon",
     "scenes": [
       {
-        "intro_text": "The ancient door is sealed by a series of glowing runes. To proceed towards the keystone, you must replicate the pattern of light that flashes before you.",
-        "challenge": {
-          "type": "SEQUENCE_MEMORY",
-          "sequence": [
-            "Sun",
-            "Moon",
-            "Star",
-            "Sun"
-          ]
-        }
-      },
-      {
-        "intro_text": "You enter a vast hall where the main path is blocked by a complex pressure-plate trap. However, a narrow, unlit maintenance tunnel runs along the side of the room.",
-        "challenge": {
-          "type": "DILEMMA",
-          "options": [
-            "Attempt to solve the pressure-plate puzzle directly.",
-            "Use the dark maintenance tunnel to bypass the trap."
-          ]
-        }
-      },
-      {
-        "intro_text": "A stone sentinel blocks the final doorway, its voice echoing in your mind. It will only grant passage to one who can answer its query and prove their worth.",
-        "challenge": {
-          "type": "RIDDLE",
-          "riddle_text": "I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?",
-          "answer": "map",
-          "time_limit": 90,
-          "hint_text": "It is a representation of the world, not the world itself."
-        }
-      },
-      {
-        "intro_text": "You've reached the keystone's altar, but as you approach, the mechanism begins to retract into the floor! You must act fast to secure the artifact before it's lost.",
+        "intro_text": "You stand before the vine-choked entrance of a forgotten ziggurat, its stone door slightly ajar. A low hum of ancient energy emanates from within, calling you to push your way inside.",
         "challenge": {
           "type": "QTE",
           "key": "E",
-          "presses": 4,
-          "time_limit": 7.5
+          "presses": 10,
+          "time_limit": 8.0
+        }
+      },
+      {
+        "intro_text": "The first chamber is filled with glowing glyphs that pulse in a mesmerizing pattern on the far wall. To proceed, you must replicate the sequence on the pressure plates at your feet.",
+        "challenge": {
+          "type": "SEQUENCE_MEMORY",
+          "sequence": [
+            "SUN",
+            "MOON",
+            "STAR",
+            "SUN"
+          ]
+        }
+      },
+      {
+        "intro_text": "A rickety rope bridge spans a chasm of indeterminate depth, swaying in a phantom wind. Across the way, you can see the next chamber, but the crossing looks perilous.",
+        "challenge": {
+          "type": "JUMP_CHASM",
+          "prompt": "Carefully make your way across the unstable rope bridge.",
+          "success_chance": 0.55
+        }
+      },
+      {
+        "intro_text": "In the heart of the ziggurat, you find a powerful artifact humming on a pedestal. As you reach for it, a ghostly guardian manifests, offering you a choice.",
+        "challenge": {
+          "type": "DILEMMA",
+          "options": [
+            "Claim the artifact's power for yourself, knowing it will destroy the guardian.",
+            "Leave the artifact, allowing the guardian to rest peacefully and the ziggurat to remain sealed."
+          ]
         }
       }
     ]

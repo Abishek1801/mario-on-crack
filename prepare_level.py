@@ -113,12 +113,12 @@ def generate_llm_content(persona):
     Generate the JSON object now.
     """
     try:
-        print("AGENT: Asking LLM for a varied and creative adventure..."); response = llm.generate_content(prompt)
+        print("AGENT: Asking SDK for a varied and creative adventure..."); response = llm.generate_content(prompt)
         json_text = response.text.strip().replace('```json', '').replace('```', ''); parsed_json = json.loads(json_text)
-        if not isinstance(parsed_json, dict): raise ValueError("LLM did not return a dictionary.")
+        if not isinstance(parsed_json, dict): raise ValueError("SDK did not return a dictionary.")
         return parsed_json
     except Exception as e:
-        print(f"AGENT CRITICAL ERROR: LLM failed to generate valid JSON. Error: {e}"); return None
+        print(f"AGENT CRITICAL ERROR: SDK failed to generate valid JSON. Error: {e}"); return None
 
 # ... (display_generation_summary and main logic are the same, just paste them in)
 def display_generation_summary(player_id,persona,knob_reasons,content):
