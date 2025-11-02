@@ -7,48 +7,40 @@
     "enemy_speed": 0.8
   },
   "content": {
-    "title": "The Gauntlet of the Unchained",
+    "title": "The Arena of the Crimson King",
     "scenes": [
       {
-        "intro_text": "You stand before the obsidian gates of Warlord Kael's proving grounds, a monument to brutal strength. A voice like grinding stone echoes, 'Your entry must be earned in fury. Shatter my gate!'",
+        "intro_text": "You stand before two colossal brass doors, humming with a deep red energy. The air smells of ozone and rust. An inscription above the gate reads: 'Only fury may enter.' There is no handle, no lock, only a solid, imposing barrier between you and the trial ahead.",
         "challenge": {
           "type": "QTE",
-          "key": "F",
-          "presses": 12,
-          "time_limit": 6
+          "description": "Channel your strength and strike the door's central seal at the precise moment it glows brightest to shatter the magical barrier.",
+          "difficulty": "medium",
+          "time_limit_seconds": 5
         }
       },
       {
-        "intro_text": "The gates lie in splinters behind you, leading to a vast hall where countless weapons line the walls. A disembodied voice challenges you, 'Brute force is not enough. Solve my riddle, or be trapped forever.'",
+        "intro_text": "The doors grind open into a circular chamber. In the center, a pressure plate is surrounded by four stone statues of mythical beasts: a Serpent, a Wolf, a Bear, and an Eagle. As you step inside, the statues grind to life, their eyes glowing malevolently. The far door is sealed tight, with a carving above it depicting the same four beasts in a specific sequence.",
         "challenge": {
-          "type": "RIDDLE",
-          "riddle_text": "I am born of the forge but have no heat. I have a single, unblinking eye, but cannot see. I end all arguments. What am I?",
-          "answer": "A sword",
-          "time_limit": 45,
-          "hint_text": "My 'eye' is the point where I meet my foe."
+          "type": "COMBAT_PUZZLE",
+          "description": "The door will only open if the statues are defeated in the correct order depicted on the archway: Serpent, Wolf, Bear, Eagle. Defeating them out of sequence causes them all to regenerate.",
+          "enemy_type": "Stone Guardian"
         }
       },
       {
-        "intro_text": "As the riddle is solved, a hidden passage opens into a treasure chamber. Before you are two pedestals: one holds a glowing axe pulsing with chaotic energy, the other holds chains that promise to bind any foe.",
+        "intro_text": "Beyond the statue room lies a deep, dark chasm, fifty feet across. A howling wind rushes up from its depths. On the far side, you can see the ornate entrance to the throne room. A narrow, crumbling stone bridge, slick with moss, is the only obvious way across, but it looks incredibly unstable.",
         "challenge": {
-          "type": "DILEMMA",
-          "options": [
-            {
-              "choice": "Seize the 'Axe of Endless Rage'.",
-              "consequence": "You feel an incredible surge of power, but a burning anger clouds your judgment, making diplomacy impossible."
-            },
-            {
-              "choice": "Take up the 'Chains of Dominion'.",
-              "consequence": "These chains can bind even the strongest foe, but their weight is a constant burden, slowing your every move."
-            }
-          ]
+          "type": "JUMP_CHASM",
+          "distance": "40 feet",
+          "description": "You can either risk the treacherous, crumbling bridge or attempt a powerful, running leap to clear the chasm in one go. The ledge on the other side is narrow."
         }
       },
       {
-        "intro_text": "You emerge into a ruined colosseum, the site of the final trial. The Warlord's voice booms, 'You have proven worthy. As a final boon, find the sigil I left behind for a true conqueror.'",
+        "intro_text": "You enter a grand, torch-lit hall. At the far end, a hulking figure in jagged, crimson armor sits on a throne of obsidian. He rises slowly, grabbing a massive, two-handed axe. 'You have strength,' his voice booms from his helmet. 'But you lack the will to rule. Prove me wrong.'",
         "challenge": {
-          "type": "FIND_COLLECTIBLE",
-          "description": "Search the arena for the Warlord's Crest. It is not in the open, but hidden where the greatest champion might have fallen, amidst a pile of shattered shields and broken bones."
+          "type": "BOSS_FIGHT",
+          "name": "The Crimson King",
+          "description": "The King is a relentless attacker. His armor is nearly impenetrable, but a glowing sigil on his chestplate flashes whenever he prepares a powerful overhead swing, briefly exposing his only weak point.",
+          "hint_text": "Dodge his heavy attacks and counter-strike the glowing sigil on his chestplate to deal significant damage."
         }
       }
     ]
