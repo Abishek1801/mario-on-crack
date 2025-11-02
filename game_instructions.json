@@ -1,0 +1,33 @@
+{
+  "knobs": {
+    "enemy_count": 4,
+    "enemy_speed": 1.0,
+    "hint_delay_ms": 10000
+  },
+  "content": {
+    "title": "The Crimson Pursuit",
+    "scenes": [
+      {
+        "intro_text": "You've tracked the rival syndicate's enforcer, 'The Hammer', to a derelict shipyard. He spots you from across a chasm between two rusting cargo containers and starts to raise a heavy crossbow.",
+        "challenge": {
+          "type": "QTE",
+          "prompt": "Leap across the gap before he can fire!",
+          "key": "SPACE",
+          "presses": 1,
+          "time_limit": 1.0
+        }
+      },
+      {
+        "intro_text": "You land hard, rolling to your feet. The Hammer is cornered, but he smirks, gesturing to a massive, precariously balanced crane hook hanging directly over the only exit. With a single lever pull, he can bring it crashing down.",
+        "challenge": {
+          "type": "DILEMMA",
+          "prompt": "He is within reach, but so is the crane's release lever. What is your immediate target?",
+          "options": [
+            "Lunge for The Hammer to take him down now.",
+            "Dash for the lever to secure your escape route first."
+          ]
+        }
+      }
+    ]
+  }
+}

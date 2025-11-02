@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "player_id": "user_123",
+  "game_id": "mario-on-crack",
+  "persona": {
+    "global": {
+      "traits": {
+        "aggression": 0.7,
+        "stealth": 0.4,
+        "curiosity": 0.5,
+        "puzzle_affinity": 0.4,
+        "independence": 0.5,
+        "resilience": 0.5,
+        "goal_focus": 0.7
+      },
+      "source": {
+        "provider": "initial_interview"
+      }
+    },
+    "game": {
+      "traits": {
+        "aggression": 0.76,
+        "stealth": 0.4,
+        "curiosity": 0.5,
+        "puzzle_affinity": 0.4,
+        "independence": 0.5,
+        "resilience": 0.6,
+        "goal_focus": 0.7
+      },
+      "source": {
+        "provider": "initial_interview"
+      }
+    }
+  }
+}

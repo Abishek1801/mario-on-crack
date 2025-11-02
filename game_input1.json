@@ -1,0 +1,147 @@
+{
+  "total": 4,
+  "items": [
+    {
+      "id": "DiyAmnDwLxDwPRxqUXXbpj",
+      "metadata": {
+        "type": "persona",
+        "persona_scope": "platform",
+        "player_id": "user10",
+        "updated_at": "2025-11-02T10:07:54.948Z",
+        "run_index": 1,
+        "run_result": "win",
+        "run_path": "combat",
+        "game_id": "test_game",
+        "completed_at": "2025-11-02T10:07:49.814Z",
+        "build_version": "v1.0.0",
+        "game_title": "Test game",
+        "platform_id": "pc"
+      },
+      "persona": {
+        "player_id": "user10",
+        "traits": {
+          "aggression": 1,
+          "stealth": 0.2,
+          "curiosity": 0.47,
+          "puzzle_affinity": 0.4,
+          "independence": 0.5,
+          "resilience": 0.38,
+          "goal_focus": 0.71
+        },
+        "persona_text": "Shows combat-inclined; goal focus 71%.",
+        "top_signals": [
+          "Solved 1 riddle(s)",
+          "Started 5 combat(s), won 5",
+          "Found 3 collectible(s)"
+        ],
+        "updated_at": "2025-11-02T10:07:54.948Z"
+      }
+    },
+    {
+      "id": "h8RVBDrafWRW6WAz3zwXwR",
+      "metadata": {
+        "type": "persona",
+        "persona_scope": "genre",
+        "player_id": "user10",
+        "updated_at": "2025-11-02T10:07:53.283Z",
+        "run_index": 1,
+        "run_result": "win",
+        "run_path": "combat",
+        "game_id": "test_game",
+        "completed_at": "2025-11-02T10:07:49.814Z",
+        "build_version": "v1.0.0",
+        "game_title": "Test game",
+        "genre_id": "platformer"
+      },
+      "persona": {
+        "player_id": "user10",
+        "traits": {
+          "aggression": 1,
+          "stealth": 0.2,
+          "curiosity": 0.47,
+          "puzzle_affinity": 0.4,
+          "independence": 0.5,
+          "resilience": 0.38,
+          "goal_focus": 0.71
+        },
+        "persona_text": "Shows combat-inclined; goal focus 71%.",
+        "top_signals": [
+          "Solved 1 riddle(s)",
+          "Started 5 combat(s), won 5",
+          "Found 3 collectible(s)"
+        ],
+        "updated_at": "2025-11-02T10:07:53.283Z"
+      }
+    },
+    {
+      "id": "T8K9SfzpBybbD3C1PM5Lzn",
+      "metadata": {
+        "type": "persona",
+        "persona_scope": "game",
+        "player_id": "user10",
+        "updated_at": "2025-11-02T10:07:51.716Z",
+        "run_index": 1,
+        "run_result": "win",
+        "run_path": "combat",
+        "game_id": "test_game",
+        "completed_at": "2025-11-02T10:07:49.814Z",
+        "build_version": "v1.0.0",
+        "game_title": "Test game"
+      },
+      "persona": {
+        "player_id": "user10",
+        "traits": {
+          "aggression": 1,
+          "stealth": 0.2,
+          "curiosity": 0.47,
+          "puzzle_affinity": 0.4,
+          "independence": 0.5,
+          "resilience": 0.38,
+          "goal_focus": 0.71
+        },
+        "persona_text": "Shows combat-inclined; goal focus 71%.",
+        "top_signals": [
+          "Solved 1 riddle(s)",
+          "Started 5 combat(s), won 5",
+          "Found 3 collectible(s)"
+        ],
+        "updated_at": "2025-11-02T10:07:51.716Z"
+      }
+    },
+    {
+      "id": "SHEg8QXsGbbA8nikbjpuDm",
+      "metadata": {
+        "type": "persona",
+        "persona_scope": "global",
+        "player_id": "user10",
+        "updated_at": "2025-11-02T10:07:50.209Z",
+        "run_index": 1,
+        "run_result": "win",
+        "run_path": "combat",
+        "game_id": "test_game",
+        "completed_at": "2025-11-02T10:07:49.814Z",
+        "build_version": "v1.0.0",
+        "game_title": "Test game"
+      },
+      "persona": {
+        "player_id": "user10",
+        "traits": {
+          "aggression": 1,
+          "stealth": 0.2,
+          "curiosity": 0.47,
+          "puzzle_affinity": 0.4,
+          "independence": 0.5,
+          "resilience": 0.38,
+          "goal_focus": 0.71
+        },
+        "persona_text": "Shows combat-inclined; goal focus 71%.",
+        "top_signals": [
+          "Solved 1 riddle(s)",
+          "Started 5 combat(s), won 5",
+          "Found 3 collectible(s)"
+        ],
+        "updated_at": "2025-11-02T10:07:50.209Z"
+      }
+    }
+  ]
+}
