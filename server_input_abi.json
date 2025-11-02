@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "player_id": "abi",
+  "session_id": "sess_4d6f691ea1c4",
+  "run_index": 1,
+  "completed_at": "2025-11-02T07:23:15Z",
+  "run_outcome": {
+    "result": "win",
+    "path": "exploration"
+  },
+  "stats": {
+    "time_s": 83,
+    "deaths": 0,
+    "retries": 0,
+    "distance_traveled": 0,
+    "jumps": 0,
+    "hint_offers": 0,
+    "hints_used": 0,
+    "riddles_attempted": 1,
+    "riddles_correct": 1,
+    "combats_initiated": 2,
+    "combats_won": 2,
+    "collectibles_found": 0
+  },
+  "events_digest": [
+    {
+      "type": "combat.start",
+      "count": 2
+    },
+    {
+      "type": "combat.win",
+      "count": 2
+    },
+    {
+      "type": "puzzle.attempt",
+      "count": 1
+    }
+  ],
+  "config_used": {
+    "mode": "challenge",
+    "knobs": {
+      "enemy_count": 3,
+      "enemy_speed": 1.3,
+      "puzzle_gate_ratio": 0.4,
+      "collectible_density": 0.25,
+      "hint_delay_ms": 12000,
+      "breadcrumb_brightness": 0.35
+    },
+    "layout_seed": "seed_636246"
+  },
+  "performance_summary": {
+    "avg_enemy_engagement_time": 3.2,
+    "puzzle_success_rate": 1.0,
+    "exploration_ratio": 0.0,
+    "hint_reliance": 0.0
+  }
+}

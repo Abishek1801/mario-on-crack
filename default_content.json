@@ -1,0 +1,28 @@
+{
+  "title": "The First Trial",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "intro_text": "You are Sir Kael, the kingdom's last hope. To reach the dragon, you must pass the outer defenses.",
+      "challenge": {
+        "type": "DILEMMA",
+        "prompt": "The path splits. To the left is a guarded bridge, to the right a crumbling, ancient cliffside path. Which do you take?",
+        "options": [
+          "Charge the bridge and fight the guards.",
+          "Risk the dangerous cliffside path."
+        ]
+      }
+    },
+    {
+      "scene_id": 2,
+      "intro_text": "You've bypassed the first obstacle and now face a magically sealed gate.",
+      "challenge": {
+        "type": "RIDDLE",
+        "prompt": "To pass, you must answer this riddle:",
+        "riddle_text": "The more you take, the more you leave behind. What am I?",
+        "answer": "footsteps",
+        "time_limit": 20
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "title": "The Curator's Gambit",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "intro_text": "Impressive work, abi. Your talent for finding the path less traveled has led you to the Shifting Archives. Towering shelves of ancient books rotate in a mesmerizing, silent dance. A shimmering arcane barrier blocks the way forward, controlled by a lectern that displays a fleeting sequence of runes. This will test your sharp mind and memory.",
+      "challenge": {
+        "type": "SEQUENCE_MEMORY",
+        "prompt": "The lectern flashes with ancient power. Memorize the sequence of runes before they fade!",
+        "sequence": [
+          "ANSUZ",
+          "BERKANO",
+          "RAIDHO",
+          "KENAZ"
+        ]
+      }
+    },
+    {
+      "scene_id": 2,
+      "intro_text": "The barrier dissolves, revealing a long, dusty hall. At the far end, a colossal stone golem sits dormant, its body a silent testament to a forgotten age. It blocks the only exit. A nearby pedestal hums, etched with a single instruction: 'Activate to clear the path.' A smaller, frantic carving below it warns: 'Be ready to strike its core!'",
+      "challenge": {
+        "type": "QTE",
+        "prompt": "You press the switch! The golem's eyes flare to life, and a glowing core is exposed on its chest for a fleeting moment. Strike it now!",
+        "key": "E",
+        "presses": 5,
+        "time_limit": 3.0
+      }
+    }
+  ]
+}
