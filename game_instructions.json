@@ -1,46 +1,53 @@
 {
   "meta": {
-    "player_id": "user14"
+    "player_id": "user19"
   },
   "knobs": {
-    "enemy_count": 4,
+    "enemy_count": 3,
     "enemy_speed": 0.8
   },
   "content": {
-    "title": "The Arena of the Crimson King",
+    "title": "The Sundered Keystone",
     "scenes": [
       {
-        "intro_text": "You stand before two colossal brass doors, humming with a deep red energy. The air smells of ozone and rust. An inscription above the gate reads: 'Only fury may enter.' There is no handle, no lock, only a solid, imposing barrier between you and the trial ahead.",
+        "intro_text": "The ancient door is sealed by a series of glowing runes. To proceed towards the keystone, you must replicate the pattern of light that flashes before you.",
+        "challenge": {
+          "type": "SEQUENCE_MEMORY",
+          "sequence": [
+            "Sun",
+            "Moon",
+            "Star",
+            "Sun"
+          ]
+        }
+      },
+      {
+        "intro_text": "You enter a vast hall where the main path is blocked by a complex pressure-plate trap. However, a narrow, unlit maintenance tunnel runs along the side of the room.",
+        "challenge": {
+          "type": "DILEMMA",
+          "options": [
+            "Attempt to solve the pressure-plate puzzle directly.",
+            "Use the dark maintenance tunnel to bypass the trap."
+          ]
+        }
+      },
+      {
+        "intro_text": "A stone sentinel blocks the final doorway, its voice echoing in your mind. It will only grant passage to one who can answer its query and prove their worth.",
+        "challenge": {
+          "type": "RIDDLE",
+          "riddle_text": "I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?",
+          "answer": "map",
+          "time_limit": 90,
+          "hint_text": "It is a representation of the world, not the world itself."
+        }
+      },
+      {
+        "intro_text": "You've reached the keystone's altar, but as you approach, the mechanism begins to retract into the floor! You must act fast to secure the artifact before it's lost.",
         "challenge": {
           "type": "QTE",
-          "description": "Channel your strength and strike the door's central seal at the precise moment it glows brightest to shatter the magical barrier.",
-          "difficulty": "medium",
-          "time_limit_seconds": 5
-        }
-      },
-      {
-        "intro_text": "The doors grind open into a circular chamber. In the center, a pressure plate is surrounded by four stone statues of mythical beasts: a Serpent, a Wolf, a Bear, and an Eagle. As you step inside, the statues grind to life, their eyes glowing malevolently. The far door is sealed tight, with a carving above it depicting the same four beasts in a specific sequence.",
-        "challenge": {
-          "type": "COMBAT_PUZZLE",
-          "description": "The door will only open if the statues are defeated in the correct order depicted on the archway: Serpent, Wolf, Bear, Eagle. Defeating them out of sequence causes them all to regenerate.",
-          "enemy_type": "Stone Guardian"
-        }
-      },
-      {
-        "intro_text": "Beyond the statue room lies a deep, dark chasm, fifty feet across. A howling wind rushes up from its depths. On the far side, you can see the ornate entrance to the throne room. A narrow, crumbling stone bridge, slick with moss, is the only obvious way across, but it looks incredibly unstable.",
-        "challenge": {
-          "type": "JUMP_CHASM",
-          "distance": "40 feet",
-          "description": "You can either risk the treacherous, crumbling bridge or attempt a powerful, running leap to clear the chasm in one go. The ledge on the other side is narrow."
-        }
-      },
-      {
-        "intro_text": "You enter a grand, torch-lit hall. At the far end, a hulking figure in jagged, crimson armor sits on a throne of obsidian. He rises slowly, grabbing a massive, two-handed axe. 'You have strength,' his voice booms from his helmet. 'But you lack the will to rule. Prove me wrong.'",
-        "challenge": {
-          "type": "BOSS_FIGHT",
-          "name": "The Crimson King",
-          "description": "The King is a relentless attacker. His armor is nearly impenetrable, but a glowing sigil on his chestplate flashes whenever he prepares a powerful overhead swing, briefly exposing his only weak point.",
-          "hint_text": "Dodge his heavy attacks and counter-strike the glowing sigil on his chestplate to deal significant damage."
+          "key": "E",
+          "presses": 4,
+          "time_limit": 7.5
         }
       }
     ]
